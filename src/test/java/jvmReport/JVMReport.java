@@ -9,7 +9,7 @@ import net.masterthought.cucumber.ReportBuilder;
 
 public class JVMReport {
 	public static void jvmReportGeneration(String json) {
-		File file=new File("C:\\Users\\ayyappan.g\\eclipse-workspace\\AllIndex\\target");
+		File file=new File("C:\\Users\\ayyappan.g\\eclipse-workspace\\ApiTestingCucumberFramework\\target");
 		Configuration confi=new Configuration(file, "AllIndex");
 		confi.addClassifications("Project", "Allindex");
 		confi.addClassifications("Module", "Compare");

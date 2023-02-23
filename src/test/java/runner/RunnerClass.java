@@ -10,11 +10,12 @@ import jvmReport.JVMReport;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/FeatureFiles", glue = { "stepDefinitions",
-"hooks" }, dryRun = false, stepNotifications = true, snippets = SnippetType.CAMELCASE, 
-monochrome = true, tags = "@first",plugin = "json:target/json/report.json")
+"hooks" }, dryRun = false, stepNotifications = true, 
+snippets = SnippetType.CAMELCASE, monochrome = true,
+tags = "@first", plugin = "json:target/json/report.json")
 public class RunnerClass {
-	@AfterClass 
+	@AfterClass
 	public static void reportGenerate() {
-		JVMReport.jvmReportGeneration("C:\\Users\\ayyappan.g\\eclipse-workspace\\AllIndex\\target\\json\\report.json"); 
+		JVMReport.jvmReportGeneration("C:\\Users\\ayyappan.g\\eclipse-workspace\\ApiTestingCucumberFramework\\target\\json\\report.json");
 	}
 }
